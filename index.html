@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yashas portfolio</title>
+    <title>yashas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-weight: bold;
+            color: #333; /* Darker text color */
+        }
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .icons img {
+            width: 50px;
+            height: 50px;
+        }
+        .icons a {
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            display: flex; /* Change to display flex */
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .icons img {
+                width: 30px; /* Decrease icon size */
+                height: 30px;
+            }
+            .icons a {
+                margin-bottom: 10px; /* Add space between links */
+            }
+            .icons {
+                flex-direction: column; /* Change to column layout for smaller screens */
+                align-items: center; /* Center align the icons */
+            }
+        }
+        
+        /* Add this CSS for h1 element */
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hi everyone my name is Yashas.A.Bharadwaj</h1>
+    <h1>Yashas</h1>
+    <div class="icons">
+        <a href="https://github.com/yashasbharadwaj1" target="_blank"><img src="github.png" alt="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/yashas-a-bharadwaj-5070a8188/" target="_blank"><img src="linkedin.png" alt="LinkedIn">LinkedIn</a>
+        <a href="path/to/your/resume.pdf" download><img src="resume.png" alt="Resume">Resume</a> <!-- Add your resume file path here -->
+        <a href="tel:+917892113486"><img src="phone.png" alt="Phone">Call</a> <!-- Add your phone number -->
+        <a href="mailto:yashasbharadwaj6@gmail.com"><img src="email.png" alt="Email">Email</a> <!-- Add your email address -->
+        <a href="about.html"><img src="about.png" alt="About">About</a>
+        <a href="experience.html"><img src="experience.png" alt="Experience">Experience</a>
+        <a href="skills.html"><img src="skills.png" alt="Skills">Skills</a> 
+        <a href="backend_projects.html"><img src="projects.png" alt="Projects">Projects</a>
+        <a href="freelance.html"><img src="freelance.png" alt="Freelance Projects">Freelance</a>
+    </div>
 </body>
 </html>
